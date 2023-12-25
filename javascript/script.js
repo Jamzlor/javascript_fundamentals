@@ -12,4 +12,31 @@ function getComputerChoice (){
   }
 };
 
-getComputerChoice();
+
+let playerChoice = prompt('Player chooses? rock / paper / scissor').toLowerCase();
+
+
+function playRound(playerChoice, computerChoice){
+    if(playerChoice === computerChoice){
+        return 'Tied'
+    } else if(playerChoice === 'rock'){
+        if(computerChoice === 'paper'){
+            return 'You lose!'
+        } else {
+            return 'You win!'
+        }
+    } else if(playerChoice === 'paper'){
+        if(computerChoice === 'scissor'){
+            return 'You lose!'
+        } else {
+            return 'You win!'
+        }
+    } else if(playerChoice === 'scissor'){
+        if(computerChoice === 'rock'){
+            return 'You lose!'
+        } else {
+            return 'You win!'
+        }
+    }
+}
+
