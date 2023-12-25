@@ -1,14 +1,15 @@
-let choice;
+let computerChoice;
+
 function getComputerChoice (){
-    choice = Math.floor(Math.random() * 3);
-  if(choice === 0){
-    console.log('rock', choice)
+    computerChoice = Math.floor(Math.random() * 3);
+  if(computerChoice === 0){
+    console.log('rock', computerChoice)
     return 'rock';
-  } else if (choice === 1){
-    console.log('paper', choice)
+  } else if (computerChoice === 1){
+    console.log('paper', computerChoice)
     return 'paper';
-  } else if (choice === 2){
-    console.log('scissor', choice)
+  } else if (computerChoice === 2){
+    console.log('scissor', computerChoice)
     return 'scissor';
   }
 };
